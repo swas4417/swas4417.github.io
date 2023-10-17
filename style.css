@@ -1,0 +1,526 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+.navbar_1 {
+  display: flex;
+  gap: 2%;
+  align-items: center;
+  height: 3vh;
+  width: 100vw;
+  background-color: #000099;
+  color: white;
+  font-weight: 50;
+  font-size: 60%;
+}
+.navbar_1 .timings {
+  /* width: 20rem; */
+  padding-left: 6%;
+  padding-right: 40%;
+}
+.phone_number,
+.email,
+.address {
+  padding-left: 1%;
+  padding-right: 1%;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  height: 5vh;
+  width: 60%;
+  border-radius: 40px;
+}
+.navbar ul li {
+  list-style-type: none;
+}
+.navbar ul li a {
+  color: #000099;
+  text-align: center;
+  text-decoration: none;
+  font-size: calc(1vw + 0.5vh);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+.navbar ul li a:hover,
+.navbar ul li a.active {
+  color: black;
+}
+.navbar ul li a.active {
+  color: black;
+}
+.navbar .logo-container {
+  display: flex;
+  margin-left: 5%;
+  margin-right: 4%;
+}
+.navbar .logo-container #all {
+  color: coral;
+  font-size: 20px;
+  font-weight: 300;
+}
+.navbar .logo-container #smiles {
+  color: #000099;
+  font-size: 20px;
+  font-weight: 300;
+}
+/* .navbar .search_btn {
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 10%;
+  cursor: pointer;
+} */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 70vh;
+  width: 100vw;
+  background-color: grey;
+}
+.container .dental_practice {
+  width: 9%;
+  height: 6%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  margin-left: 18%;
+  background-color: #ff471a;
+  color: white;
+  font-size: 100%;
+}
+.container .line_1 {
+  width: 22%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  background-color: #eaedf0;
+  color: #000099;
+  font-size: 180%;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-left: 18%;
+}
+.container .line_2 {
+  width: 19%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  background-color: #eaedf0;
+  color: #000099;
+  font-size: 180%;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  margin-left: 18%;
+}
+.container .buttons {
+  display: flex;
+  /* align-items: center; */
+  gap: 1rem;
+  margin-left: 18%;
+  margin-top: 2rem;
+}
+.container .buttons .view_more_btn {
+  width: 12%;
+  height: 200%;
+  background-color: #000099;
+  color: white;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+.container .buttons .purchase_btn {
+  width: 12%;
+  height: 200%;
+  background-color: white;
+  color: #000099;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+.swiper {
+  width: 100%;
+  height: 80vh;
+}
+.swiper-slide {
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-pagination {
+  margin-bottom: 6rem;
+}
+.container_2 {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3vw;
+  width: 90vw;
+  margin-bottom: 5rem;
+}
+.container_2 .box_1 {
+  background-color: #eaedf0;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+}
+.container_2 .box_1 .picture_1 {
+  width: 100%;
+  height: 150px;
+  background-color: grey;
+}
+.container_2 .box_1 .writing_1 {
+  color: #000099;
+  font-size: 20px;
+  font-weight: 1000;
+  padding: 40px 5px 20px 15px;
+}
+.container_2 .box_1 .writing_2 {
+  color: black;
+  font-size: 14px;
+  padding: 0 30px 20px 18px;
+}
+.container_2 .box_1 .read_more {
+  color: black;
+  font-size: 12px;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  cursor: pointer;
+}
+.container_2 .box_2 {
+  background-color: #eaedf0;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+}
+.container_2 .box_2 .picture_2 {
+  width: 100%;
+  height: 150px;
+  background-color: grey;
+  margin-bottom: 40px;
+}
+.container_2 .box_2 .list {
+  list-style: none;
+}
+.container_2 .box_2 .list li::before {
+  content: "+";
+  color: red;
+  font-weight: 1000;
+  display: inline-block;
+  width: 2em;
+  margin-left: -1em;
+}
+.container_2 .box_2 .list li {
+  font-size: 14px;
+  padding: 0 30px 5px 18px;
+  color: black;
+}
+.container_2 .box_3 {
+  background-color: rgb(252, 228, 228);
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+}
+.container_2 .box_3 .working_hours {
+  display: flex;
+  justify-content: center;
+  color: #000099;
+  font-size: 25px;
+  font-weight: 1000;
+  padding: 3rem 0 4rem 0;
+}
+.container_2 .box_3 .days_time {
+  display: flex;
+  justify-content: center;
+  gap: 25%;
+  font-size: 14px;
+  margin-right: 2.5rem;
+}
+.container_2 .box_3 .days_time .days {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  list-style: none;
+}
+.container_2 .box_3 .days_time .time {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  list-style: none;
+}
+.container_2 .box_3 .call_us {
+  background-color: #000099;
+  color: white;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  padding: 18px 0 18px 0;
+  margin-top: 2rem;
+}
+.container_3 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 6%;
+  padding-right: 3%;
+}
+.container_3 .container_3_box_1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-bottom: 3.5rem;
+  justify-content: space-between;
+}
+.container_3 .container_3_box_1 .root_canal_specialist_img {
+  width: 5rem;
+  height: 5rem;
+}
+.container_3 .container_3_box_1 .root_canal_specialist {
+  width: 16rem;
+  font-size: 14px;
+  color: darkslategray;
+}
+.container_3 .container_3_box_2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-bottom: 3.5rem;
+  justify-content: space-between;
+}
+.container_3 .container_3_box_2 .alignment_specialist_img {
+  width: 5rem;
+  height: 5rem;
+}
+.container_3 .container_3_box_2 .alignment_specialist {
+  width: 16rem;
+  font-size: 14px;
+  color: darkslategray;
+}
+.container_3 .container_3_box_3 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-bottom: 3.5rem;
+  justify-content: space-between;
+}
+.container_3 .container_3_box_3 .cosmetic_dentistry_img {
+  width: 5rem;
+  height: 5rem;
+}
+.container_3 .container_3_box_3 .cosmetic_dentistry {
+  width: 16rem;
+  font-size: 14px;
+  color: darkslategray;
+  padding-left: 8px;
+}
+.container_3 .container_3_box_4 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-bottom: 3.5rem;
+  justify-content: space-between;
+}
+.container_3 .container_3_box_4 .oral_hygine_expert_img {
+  width: 5rem;
+  height: 5rem;
+}
+.container_3 .container_3_box_4 .oral_hygine_expert {
+  width: 16rem;
+  font-size: 14px;
+  color: darkslategray;
+  padding-left: 5px;
+}
+.container_3 .container_3_box_5 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-bottom: 3.5rem;
+  justify-content: space-between;
+}
+.container_3 .container_3_box_5 .live_dental_advisory_img {
+  width: 5rem;
+  height: 5rem;
+}
+.container_3 .container_3_box_5 .live_dental_advisory {
+  width: 16rem;
+  font-size: 14px;
+  color: darkslategray;
+}
+.container_3 .container_3_box_6 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-bottom: 3.5rem;
+  justify-content: space-between;
+}
+.container_3 .container_3_box_6 .cavity_inspection_img {
+  width: 5rem;
+  height: 5rem;
+}
+.container_3 .container_3_box_6 .cavity_inspection {
+  width: 16rem;
+  font-size: 14px;
+  color: darkslategray;
+  padding-left: 4px;
+}
+.container_4 {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: auto;
+  background-color: rgb(207, 237, 255);
+  margin-bottom: 10rem;
+  justify-content: space-between;
+}
+.container_4 .container_4_writing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  padding-left: 5%;
+  background-color: rgb(207, 237, 255);
+}
+.container_4 .container_4_writing .dental_prac {
+  color: #ff471a;
+  font-size: 12px;
+  font-weight: bold;
+}
+.container_4 .container_4_writing .head {
+  color: #000099;
+  font-size: 35px;
+  font-weight: 1000;
+  padding-top: 0.5rem;
+}
+.container_4 .container_4_writing .para {
+  color: black;
+  font-size: 14px;
+  padding-top: 1.5rem;
+}
+.container_4 .container_4_writing .andrea_mc_collins {
+  color: #ff471a;
+  font-size: 18px;
+  font-weight: 1000;
+  padding-top: 2rem;
+}
+.container_4 .container_4_video {
+  width: 50%;
+  height: 22rem;
+  background-color: grey;
+}
+@media only screen and (max-width: 1200px) {
+  .navbar_1 .timings {
+    padding-right: 25%;
+  }
+  .navbar ul {
+    display: none;
+  }
+  .container .dental_practice {
+    font-size: 12px;
+  }
+  .container .line_1 {
+    width: 21%;
+    font-size: 160%;
+    justify-content: left;
+    padding-left: 1%;
+  }
+  .container .line_2 {
+    width: 20%;
+    font-size: 160%;
+    justify-content: left;
+    padding-left: 1%;
+  }
+  .container .buttons .view_more_btn {
+    font-size: 12px;
+  }
+  .container .buttons .purchase_btn {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .navbar_1 .timings {
+    padding-right: 15%;
+  }
+  .container .dental_practice {
+    font-size: 10px;
+  }
+  .container .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    /* align-items: center; */
+  }
+  .container .buttons .view_more_btn,
+  .container .buttons .purchase_btn {
+    font-size: 60%;
+    padding: 5px 0;
+  }
+  .container_4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container_4 .container_4_writing {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    align-items: center;
+  }
+  .container_4 .container_4_writing .head,
+  .container_4 .container_4_writing .para {
+    text-align: center;
+  }
+  .container_4 .container_4_video {
+    width: 100vw;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .navbar_1 {
+    font-size: 8px;
+  }
+  .navbar_1 .timings {
+    padding-right: 8%;
+  }
+  .container .dental_practice {
+    font-size: 8px;
+  }
+  .container .line_1 {
+    width: 21%;
+    font-size: 100%;
+    justify-content: left;
+    padding-left: 1%;
+  }
+  .container .line_2 {
+    width: 20%;
+    font-size: 100%;
+    justify-content: left;
+    padding-left: 1%;
+  }
+}
